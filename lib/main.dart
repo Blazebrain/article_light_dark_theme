@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       initial: savedThemeMode ?? AdaptiveThemeMode.light,
       builder: (theme, dark) {
         return MaterialApp(
-          title: 'Article Light/Dark Theme',
+          title: 'Light/Dark Theme',
           theme: theme,
           darkTheme: dark,
           home: const HomePage(),
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
           Center(
             child: RawMaterialButton(
               child: const Text(
-                'Switch Modes',
+                'Toggle Theme',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
